@@ -14,9 +14,11 @@ namespace pl
     };
 
     // forward
-    //__global__ void forwardPooling(float *pre_ouput, float *output, pl::param param);
+    __global__ void forwardPooling(float *prev_ouput, float *output, pl::param param);
+    __global__ void forwardPoolingStoreID(float *prev_output, float *maxID, pl::param param);
 
     // backward
+    __global__ void backwardPooling(float *prev_d_output, float *d_output, int *maxID, pl::param param);
 };
 
 /**
