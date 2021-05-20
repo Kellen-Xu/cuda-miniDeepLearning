@@ -20,6 +20,7 @@
 #define IDX3(a,b,c,A,B,C) (a)*(B)*(C)+(b)*(C)+c
 #define INPUT_LAYER_TYPE "input"
 #define CONV_LAYER_TYPE "conv"
+#define POOLING_LAYER_TYPE "max_pooling"
 #define SIGMOID_LAYER_TYPE "sigmoid"
 #define SOFTMAX_LAYER_TYPE "softmax"
 
